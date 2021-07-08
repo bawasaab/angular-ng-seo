@@ -1,2 +1,8 @@
-<h1>{{ details.title }}</h1>
+<h2>{{ details.title }}</h2>
 <p>{{ details.body }}</p>
+
+<br>
+
+<span *ngFor="let number of numbers">
+    <a *ngIf="number > 0" href="javascript:void(0);" [routerLink]="['/jobs/', number]">{{number}}</a>&nbsp;
+</span>
